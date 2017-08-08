@@ -1,0 +1,15 @@
+<li>
+  <div class="thumbnail">
+    {{#link-to 'story' story.id}}
+    <div class="row">
+      <div class="col-md-6">
+        <img src={{story.image}} height=100% width=100% alt={{story.tagline}}>
+      </div>
+      <div class="col-md-6">
+
+        <h4>{{story.tagline}}</h4> <em>by {{story.author}}</em> <br><br>{{story.content}}
+      </div>
+    </div>
+    {{/link-to}}
+  </div>
+</li><br>

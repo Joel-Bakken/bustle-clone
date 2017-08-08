@@ -1,5 +1,10 @@
-{{!-- The following component displays Ember's default welcome message. --}}
-{{welcome-page}}
-{{!-- Feel free to remove this! --}}
-
-{{outlet}}
+<div class="container">
+  <header class="jumbotron">
+    <h1>Bustle &amp; Clone</h1>
+  </header>
+    {{outlet}}
+  <hr>
+  <footer>
+    {{#link-to 'contact'}}Let us know if you have a good story that isn't about Trump!{{/link-to}}
+  </footer>
+</div>
